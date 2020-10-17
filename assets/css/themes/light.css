@@ -1,0 +1,77 @@
+body {
+    background-color: #fff0f0;
+}
+.logo-wrapper .logo-text {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #ebd4d4;
+}
+
+nav.uk-navbar-container {
+    background-color: #463333 !important;
+}
+nav.uk-navbar-container li a, nav.uk-navbar-container li a:hover {
+    color: #ebd4d4;
+}
+
+#left-bar {
+    background-color: #463333;
+}
+#left-bar a {
+    color: #ebd4d4;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+#left-bar a:hover {
+    background-color: #835858;
+}
+#left-bar a.active {
+    background-color: #835858;
+}
+#left-bar a i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+#left-bar ul.uk-nav {
+    padding: 10px;
+}
+.tcard {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.tcard .card-body {
+    padding: 10px;
+}
+.tcard .card-body h4 {
+    color: #463333;
+    margin: 0;
+}
+.tcard .card-body .button {
+    background-color: #463333;
+    color: #ebd4d4;
+    text-transform: none;
+    margin-top: 20px;
+}
+.uk-button-brown {
+    background-color: #463333;
+    color: #fff0f0;
+    text-transform: none;;
+}
+.title {
+    font-size: 18px;
+}
+input[type='file'] {
+    padding-top: 7px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    background-color: transparent;
+    border: 1px solid #463333;
+    color: #463333;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    background-color: transparent;
+    border-color: #463333;
+}
