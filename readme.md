@@ -1,0 +1,3 @@
+# BootStatic
+
+Static Blog Generator
