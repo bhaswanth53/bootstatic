@@ -75,3 +75,16 @@ input[type='file'] {
     background-color: transparent;
     border-color: #463333;
 }
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #463333;
+}
+th {
+    color: #463333 !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+}

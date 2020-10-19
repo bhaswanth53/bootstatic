@@ -1,3 +1,7 @@
+/* Custom */
+$('.datatable').DataTable();
+
+
 $.fn.clicktoggle = function(a, b) {
     return this.each(function() {
         var clicked = false;

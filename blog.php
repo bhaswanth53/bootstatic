@@ -23,12 +23,51 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">Dashboard</a></li>
                         <li><a href="">Blogs</a></li>
+                        <li><?php echo $schema['name']; ?></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="page-content">
-            
+            <div>
+                <table class="uk-table">
+                    <tr>
+                        <th>Blog Name</th>
+                        <td><?php echo $schema['name']; ?></td>
+                        <th>Title</th>
+                        <td><?php echo $schema['title']; ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="label-title">Description</p>
+                            <?php echo $schema['description']; ?>
+                        </td>
+                        <td colspan="2">
+                            <p class="label-title">Keywords</p>
+                            <?php echo $schema['keywords']; ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Template</th>
+                        <td colspan="2"><?php echo $schema['template']; ?></td>
+                    </tr>
+                </table>
+            </div>
+            <h4>Posts</h4>
+            <div class="uk-overflow-auto">
+                <table class="datatable uk-table">
+                    <thead>
+                        <tr>
+                            <td>S.No</td>
+                            <td>Post Title</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
