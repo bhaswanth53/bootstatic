@@ -53,7 +53,15 @@
                     </tr>
                 </table>
             </div>
-            <h4>Posts</h4>
+            <div class="uk-grid-match" uk-grid>
+                <div class="uk-width-1-2">
+                    <p class="title">Posts</p>
+                </div>
+                <div class="uk-width-1-2 uk-text-right">
+                    <a href=""><button class="uk-button uk-button-small uk-button-brown">Add <i class="fa fa-plus ml-2"></i></button></a>
+                </div>
+            </div>
+            <br/>
             <div class="uk-overflow-auto">
                 <table class="datatable uk-table">
                     <thead>
