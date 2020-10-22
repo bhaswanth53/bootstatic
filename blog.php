@@ -58,7 +58,7 @@
                     <p class="title">Posts</p>
                 </div>
                 <div class="uk-width-1-2 uk-text-right">
-                    <a href=""><button class="uk-button uk-button-small uk-button-brown">Add <i class="fa fa-plus ml-2"></i></button></a>
+                    <a href="<?php echo "add_post.php?blog=" . $blog; ?>"><button class="uk-button uk-button-small uk-button-brown">Add <i class="fa fa-plus ml-2"></i></button></a>
                 </div>
             </div>
             <br/>

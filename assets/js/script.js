@@ -1,5 +1,6 @@
 /* Custom */
 $('.datatable').DataTable();
+$('.editor').summernote();
 
 
 $.fn.clicktoggle = function(a, b) {

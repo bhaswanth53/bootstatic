@@ -88,3 +88,44 @@ th {
     letter-spacing: 0.5px !important;
     text-transform: none !important;
 }
+.ptitle {
+    color: #fff0f0;
+    background-color: #463333;
+    padding: 10px 20px 10px 20px;
+}
+.no-resize {
+    resize: none;
+}
+.note {
+    font-size: 13px;
+    color: red;
+    margin: 0;
+}
+
+/* Text editor */
+.note-editor.note-frame {
+    border-radius: 0;
+}
+.note-toolbar {
+    background-color: #463333 !important;
+    border-radius: 0 !important;
+}
+.note-btn {
+    border: 0 !important;
+    color: #fff0f0 !important;
+    background-color:#835858 !important;
+    padding: 3px 8px !important;
+    border-radius: 0 !important;
+}
+.note-editable {
+    background-color: #fff0f0;
+}
+.note-editor.note-airframe, .note-editor.note-frame {
+    border: 1px solid #463333 !important;
+}
+.note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    background-color: #ebd4d4 !important;
+    border: 0 !important;
+    border-radius: inherit;
+}
+/* End of text editor */
