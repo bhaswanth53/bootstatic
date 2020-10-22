@@ -30,7 +30,9 @@
             </div>
         </div>
         <div class="page-content">
-            <form method="POST" action="" class="uk-margin-top">
+            <form method="POST" action="./process/add_post_process.php" class="uk-margin-top" enctype="multipart/form-data">
+                <input type="hidden" name="blog" value="<?php echo $schema['id']; ?>" />
+                <input type="hidden" name="template" value="<?php echo $schema['template']; ?>" />
                 <div uk-grid>
                     <div class="uk-width-2-3@m">
                         <div class="uk-margin">
@@ -64,9 +66,10 @@
                         </div>
                         <p class="ptitle">Featured Image</p>
                         <div class="uk-margin">
-                            <input type="file" class="uk-input" name="image" />
+                            <input type="file" class="uk-input" name="image" id="featureImage" />
+                            <img class="uk-margin-top uk-width-1-1" src="./assets/images/back.jpg" id="preview-featured" style="display: none;" />
                         </div>
-                        <button type="submit" class="uk-button uk-button-brown">Create Post</button>
+                        <button type="submit" name="submmit" class="uk-button uk-button-brown" value="submit">Create Post</button>
                     </div>
                 </div>
             </form>

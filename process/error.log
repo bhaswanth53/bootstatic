@@ -1,0 +1,3 @@
+[22-Oct-2020 14:33:42 Europe/Berlin] PHP Fatal error:  Cannot declare class File, because the name is already in use in C:\xampp\htdocs\bootstatic\core\facades\File.php on line 2
+[22-Oct-2020 14:35:02 Europe/Berlin] PHP Warning:  file_get_contents(C:\xampp\htdocs\bootstatic\process/../templates/Bhaswanth/posts/post.html): failed to open stream: No such file or directory in C:\xampp\htdocs\bootstatic\core\facades\File.php on line 76
+[22-Oct-2020 14:51:03 Europe/Berlin] PHP Notice:  Undefined variable: mtitle in C:\xampp\htdocs\bootstatic\process\add_post_process.php on line 21

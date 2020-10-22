@@ -70,3 +70,19 @@ $(window).resize(function() {
         leftbarclose();
     }
 });
+
+var readImage = (input) => {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var preview = $('#preview-featured');
+        reader.onload = function(e) {
+            preview.attr('src', e.target.result);
+            preview.show();
+        }
+        reader.readAsDataURL(input.files[0]); // convert to base64 string
+    }
+}
+
+$("#featureImage").change(function(){
+    readImage(this);
+});

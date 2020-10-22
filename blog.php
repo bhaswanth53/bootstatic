@@ -8,6 +8,9 @@
 
     $schema = $blogdb->select("*")->from("schema.json")->get();
     $schema = (array) $schema[0];
+
+    $posts = $blogdb->select("*")->from("posts.json")->get();
+    $posts = (array) $posts;
 ?>
 
 <?php include("./layouts/header.php"); ?>
@@ -72,7 +75,31 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        <?php
+                            if(isset($posts) && count($posts) > 0) {
+                                $iteration = 1;
+                                foreach($posts as $post) {
+                                    $post = (array) $post;
+                                    $url = "./core/blogs/" . $blog . "/posts/" . $post['page'];
+                        ?>
+                                <tr>
+                                    <td><?php echo $iteration; ?></td>
+                                    <td><?php echo $post['title']; ?></td>
+                                    <td>
+                                        <divc class="uk-button-group">
+                                            <a href="<?php echo $url; ?>" target="_blank" title="View Page"><button class="uk-button uk-button-small uk-margin-right uk-button-brown"><i class="fa fa-eye"></i></button></a>
+                                            <form method="POST" action="">
+                                                <input type="hidden" name="post" value="<?php echo $post['id']; ?>" />
+                                                <button type="submit" class="uk-button uk-button-small uk-button-brown" title="ExportPost"><i class="fa fa-cloud-download"></i></button>
+                                            </form>
+                                        </divc>
+                                    </td>
+                                </tr>
+                        <?php
+                                    $iteration++;
+                                }
+                            }
+                        ?>
                     </tbody>
                 </table>
             </div>
