@@ -11,6 +11,10 @@
             $folder = $this->getPath($folder);
             return (is_dir($folder) && file_exists($folder));
         }
+        public function folderExists($folder)
+        {
+            return (is_dir($folder) && file_exists($folder));
+        }
         public function createFolder($folder)
         {
             if(!$this->checkFolder($folder))

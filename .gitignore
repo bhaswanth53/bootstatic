@@ -4,3 +4,4 @@ core/data/*
 core/templates/*
 core/templates/zip
 error_log
+build

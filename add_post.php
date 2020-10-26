@@ -46,6 +46,11 @@
                             <span class="note">*URL must be unique in the blog.</span>
                         </div>
                         <div class="uk-margin">
+                            <label class="uk-form-label">Short Description</label>
+                            <textarea class="uk-textarea no-resize" name="chunk" rows="3"></textarea>
+                            <span class="note">*Max 500 characters allowed.</span>
+                        </div>
+                        <div class="uk-margin">
                             <label class="uk-form-label">Post Content</label>
                             <textarea class="editor uk-textarea" name="content"></textarea>
                         </div>

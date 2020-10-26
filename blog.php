@@ -54,6 +54,22 @@
                         <th colspan="2">Template</th>
                         <td colspan="2"><?php echo $schema['template']; ?></td>
                     </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="uk-button-group">
+                                <?php if(!is_dir("build/".$schema['name']) || !file_exists("build/".$schema['name'])) { ?>
+                                    <form method="POST" action="./process/export_blog_process.php">
+                                        <input type="hidden" name="id" value="<?php echo $schema['id']; ?>" />
+                                        <button type="submit" class="uk-button uk-button-brown">Export</button>
+                                    </form>
+                                <?php } else { ?>
+                                    <form method="POST" action="">
+                                        <button type="submit" class="uk-button uk-button-brown">Update</button>
+                                    </form>
+                                <?php } ?>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="uk-grid-match" uk-grid>

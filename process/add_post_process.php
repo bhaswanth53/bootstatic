@@ -12,6 +12,7 @@
     $post_title = $_POST['ptitle'];
     $url = $_POST['purl'];
     $content = $_POST['content'];
+    $chunk = $_POST['chunk'];
 
     $blogdb = new JSONDB( '../core/blogs/' . $blog );
 
@@ -33,6 +34,7 @@
         "title" => $post_title,
         "image" => $image,
         "page" => $page,
+        "chunk" => $chunk,
         "date" => date('d-m-Y h:i:s')
     ]);
 
