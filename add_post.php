@@ -36,42 +36,43 @@
                 <div uk-grid>
                     <div class="uk-width-2-3@m">
                         <div class="uk-margin">
-                            <label class="uk-form-label">Title</label>
-                            <input type="text" class="uk-input" name="ptitle" />
+                            <label class="uk-form-label">Title<span class="text-danger">*</span></label>
+                            <input type="text" class="uk-input" name="ptitle" required />
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label">URL</label>
-                            <input type="text" class="uk-input" name="purl" />
+                            <label class="uk-form-label">URL<span class="text-danger">*</span></label>
+                            <input type="text" class="uk-input" name="purl" required />
                             <span class="note">*Words seperated by "-".</span><br/>
                             <span class="note">*URL must be unique in the blog.</span>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label">Short Description</label>
-                            <textarea class="uk-textarea no-resize" name="chunk" rows="3"></textarea>
+                            <label class="uk-form-label">Short Description<span class="text-danger">*</span></label>
+                            <textarea class="uk-textarea no-resize" name="chunk" rows="3" required></textarea>
                             <span class="note">*Max 500 characters allowed.</span>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label">Post Content</label>
-                            <textarea class="editor uk-textarea" name="content"></textarea>
+                            <label class="uk-form-label">Post Content<span class="text-danger">*</span></label>
+                            <textarea class="editor uk-textarea" name="content" required></textarea>
                         </div>
                     </div>
                     <div class="uk-width-1-3@m">
                         <p class="ptitle">Meta Data</p>
                         <div class="uk-margin">
-                            <label class="uk-form-label">Page Title</label>
-                            <input type="text" class="uk-input" name="mtitle" />
+                            <label class="uk-form-label">Page Title<span class="text-danger">*</span></label>
+                            <input type="text" class="uk-input" name="mtitle" required />
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label">Page Description</label>
-                            <textarea class="uk-textarea no-resize" rows="4" name="mdescription"></textarea>
+                            <label class="uk-form-label">Page Description<span class="text-danger">*</span></label>
+                            <textarea class="uk-textarea no-resize" rows="4" name="mdescription" required></textarea>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label">Keywords</label>
-                            <textarea class="uk-textarea no-resize" rows="3" name="mkeywords"></textarea>
+                            <label class="uk-form-label">Keywords<span class="text-danger">*</span></label>
+                            <textarea class="uk-textarea no-resize" rows="3" name="mkeywords" required></textarea>
+                            <span class="note">* Please seperate keywords with (,) commas.</span>
                         </div>
-                        <p class="ptitle">Featured Image</p>
+                        <p class="ptitle">Featured Image<span class="text-danger">*</span></p>
                         <div class="uk-margin">
-                            <input type="file" class="uk-input" name="image" id="featureImage" />
+                            <input type="file" class="uk-input" name="image" id="featureImage" required />
                             <img class="uk-margin-top uk-width-1-1" src="./assets/images/back.jpg" id="preview-featured" style="display: none;" />
                         </div>
                         <button type="submit" name="submmit" class="uk-button uk-button-brown" value="submit">Create Post</button>

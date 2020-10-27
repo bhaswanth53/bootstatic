@@ -30,6 +30,7 @@
                     <div class="uk-margin">
                         <label class="uk-form-label" for="file">Template File(Zip)<span class="text-danger">*</span></label>
                         <input type="file" class="uk-input" name="file" required />
+                        <span class="note">*Please add template as zip file only.</span>
                     </div>
                     <div class="uk-margin">
                         <button type="submit" name="submit" class="uk-button uk-button-brown">Upload</button>
