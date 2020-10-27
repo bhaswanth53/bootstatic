@@ -117,7 +117,7 @@
         }
         public function createPage($url)
         {
-            $page = $url.".php";
+            $page = $url.".html";
             $file_path = "../core/blogs/" . $this->blog . "/posts/" . $page;
             if(!$this->file->fileExists($file_path)) {
                 $this->file->createFile($file_path);

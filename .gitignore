@@ -5,3 +5,4 @@ core/templates/*
 core/templates/zip
 error_log
 build
+error.log

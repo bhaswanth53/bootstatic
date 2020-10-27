@@ -57,14 +57,22 @@
                     <tr>
                         <td colspan="4">
                             <div class="uk-button-group">
-                                <?php if(!is_dir("build/".$schema['name']) || !file_exists("build/".$schema['name'])) { ?>
+                                <?php if(!is_dir("build/".$schema['id']) || !file_exists("build/".$schema['id'])) { ?>
                                     <form method="POST" action="./process/export_blog_process.php">
                                         <input type="hidden" name="id" value="<?php echo $schema['id']; ?>" />
                                         <button type="submit" class="uk-button uk-button-brown">Export</button>
                                     </form>
                                 <?php } else { ?>
-                                    <form method="POST" action="">
+                                    <a href="<?php echo "./build/" . $schema['id']; ?>" target="_blank">
+                                        <button class="uk-button uk-button-brown uk-margin-right">View Blog</button>
+                                    </a>
+                                    <form method="POST" action="./process/update_blog_process.php">
+                                        <input type="hidden" name="id" value="<?php echo $schema['id']; ?>" />
                                         <button type="submit" class="uk-button uk-button-brown">Update</button>
+                                    </form>
+                                    <form method="POST" action="./process/export_as_zip.php">
+                                        <input type="hidden" name="id" value="<?php echo $schema['id']; ?>" />
+                                        <button type="submit" class="uk-button uk-button-brown uk-margin-left">Export as zip</button>
                                     </form>
                                 <?php } ?>
                             </div>
