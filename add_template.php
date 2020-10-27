@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="page-content">
-            <form action="./process/upload_template.php" method="POST" enctype="multipart/form-data">
+            <form action="./process/upload_template.php" class="formlay" method="POST" enctype="multipart/form-data">
                 <div class="uk-width-1-2@m">
                     <div class="uk-margin">
                         <label class="uk-form-label" for="name">Template Name<span class="text-danger">*</span></label>

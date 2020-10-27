@@ -2,6 +2,11 @@
 $('.datatable').DataTable();
 $('.editor').summernote();
 
+var overlay = document.getElementById('overlay')
+window.addEventListener('load', function() {
+    overlay.style.display = "none"
+})
+
 
 $.fn.clicktoggle = function(a, b) {
     return this.each(function() {
@@ -86,3 +91,7 @@ var readImage = (input) => {
 $("#featureImage").change(function(){
     readImage(this);
 });
+
+$(".formlay").on('submit', function() {
+    overlay.style.display = "block"
+})

@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="page-content">
-            <form action="./process/add_blog_process.php" method="POST">
+            <form action="./process/add_blog_process.php" class="formlay" method="POST">
                 <div class="uk-margin">
                     <label class="uk-form-label" for="template">Select Template<span class="text-danger">*</span></label>
                     <select class="uk-select" name="template" required>

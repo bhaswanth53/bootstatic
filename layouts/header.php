@@ -26,6 +26,11 @@
         <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     </head>
     <body data-theme="light">
+        <div id="overlay">
+            <div class="load">
+                <hr/><hr/><hr/><hr/>
+            </div>
+        </div>
         <aside id="left-bar" class="uk-light left-col nicescroll">
             <div class="bar-wrap uk-padding-remove"> 
                 <button class="uk-offcanvas-close uk-hidden@m" type="button" id="left-bar-close" uk-close></button>

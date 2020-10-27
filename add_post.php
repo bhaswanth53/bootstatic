@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="page-content">
-            <form method="POST" action="./process/add_post_process.php" class="uk-margin-top" enctype="multipart/form-data">
+            <form method="POST" action="./process/add_post_process.php" class="uk-margin-top formlay" enctype="multipart/form-data">
                 <input type="hidden" name="blog" value="<?php echo $schema['id']; ?>" />
                 <input type="hidden" name="template" value="<?php echo $schema['template']; ?>" />
                 <div uk-grid>
