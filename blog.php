@@ -114,7 +114,7 @@
                                             <a href="<?php echo $url; ?>" target="_blank" title="View Page"><button class="uk-button uk-button-small uk-margin-right uk-button-brown"><i class="fa fa-eye"></i></button></a>
                                             <form method="POST" action="">
                                                 <input type="hidden" name="post" value="<?php echo $post['id']; ?>" />
-                                                <button type="submit" class="uk-button uk-button-small uk-button-brown" title="ExportPost"><i class="fa fa-cloud-download"></i></button>
+                                                <!-- <button type="submit" class="uk-button uk-button-small uk-button-brown" title="ExportPost"><i class="fa fa-cloud-download"></i></button> -->
                                             </form>
                                         </divc>
                                     </td>

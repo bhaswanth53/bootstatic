@@ -1,5 +1,7 @@
 <?php
 
+    require "../vendor/autoload.php";
+
     use Jajo\JSONDB;
 
     $blog = $_POST['id'];
@@ -53,5 +55,7 @@
     header('Pragma: public');
     header('Content-Length: ' . filesize($zip_file));
     readfile($zip_file);
+
+    unlink($zip_file);
 
 ?>
