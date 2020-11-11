@@ -102,8 +102,10 @@
             $posts = $this->posts;
             $listing = "";
 
-            foreach($posts as $post)
+            //foreach($posts as $post)
+            for($i = count($posts)-1; $i >= 0; $i--)
             {
+                $post = $posts[$i];
                 $post = (array) $post;
                 $data = $this->chunkImageFilter("./posts/" . $post['image'], $chunk);
                 $data = $this->chunkTitleFilter($post['title'], $data);
